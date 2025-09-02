@@ -1,0 +1,9 @@
+function showContent(option) {
+      let content = "";
+      if (option === "contenidoX") {
+        content = "<h2>Bibliografia</h2><p>Jiao, M., Liu, Y., Wang, J., & Peng, Y. (2026). Pixel2Noise: A lightweight self-supervised denoising for single image zero-shot recognition. Pattern Recognition, 158, 112148. https://doi.org/10.1016/j.patcog.2025.112148 </p> <h2>Abstract</h2> <p>Image denoising technologies are pivotal in providing high-fidelity input images for autonomous driving, cognitive robotics, drone swarm networks, Virtual Reality (VR), Augmented Reality (AR), and other advanced applications. However, resource-constrained terminal devices cannot sustainably support high-complexity and high-fidelity image denoising. To address this problem, this paper proposed a lightweight zero-shot pixel-level image denoising approach. First, we constructed the lightweight Regional Feature Enhanced Denoising Network (RFED-Net) that greatly reduces the network parameters by focusing on high-noise feature regions. To enable RFED-Net to learn the true values of vertex pixels, we proposed a Vertex-to-Edge pyramid mapping method (VE). Then, the Slope-to-Vertex consistency monitoring strategy (SV) is designed to construct the slope filter. Multilevel noisy images are constructed with slope filters and noise estimation to improve image consistency. Finally, numerous experiments on the Mcmaster18, PolyU, and other datasets prove that the Peak Signal-to-Noise Ratio (PSNR) of our method improves by 2.96 % with 28.57 % faster processing compared to lightweight benchmark methods. With the same denoising quality, the image processing speed of our method is improved by 51.22 % compared to other highly complex methods. © 2025 Elsevier Ltd</p>";
+      } else if (option === "contenidoY") {
+        content = '<h2>Filtro de Busqueda</h2><img src="img/img1.jpg"/></img>';
+      }
+      document.getElementById("contenido").innerHTML = content;
+    }
